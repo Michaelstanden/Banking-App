@@ -25,15 +25,27 @@
             </ul>
         </nav>
     </div>
+    <container class="account-summary">
+    <div class="summary-boxes">
+        <p>Current Balance</p>
+        <p class="acc-total" id="accTotal"></p> 
+     </div>
+ 
+    <div class="summary-boxes">
+        <p>Deposit Amount</p>
+        <p class="acc-total" id="accTotal"></p>
+        <input type="number" class="deposit-input" id="depAmount">
+        <button class="dep-btn" id=depBtn>Deposit Amount</button>  
+     </div>
 
-    <div>
-       <p>Wthdraw Amount</p>
+    <div class="summary-boxes">
+       <p>Withdraw Amount</p>
        <p class="acc-total" id="accTotal"></p>
-       <input type="integar" class="withdraw-input" id="wdAmount"> 
+       <input type="number" class="withdraw-input" id="wdAmount">
+       <button class="wd-btn" id=WdBtn>Withdraw Amount</button> 
     </div>
-
-    
-
+</container>    
+<script src="static/javascript/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>

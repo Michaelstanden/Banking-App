@@ -1,4 +1,3 @@
-document.ready();
 const wdBtn = document.getElementById("wdBtn");
 const depBtn = document.getElementById("depBtn");
 const wdAmount = document.getElementById("wdAmount");
@@ -21,7 +20,7 @@ class Bank {
         return this._wdAmount;
     }
     set accTotal(value){
-        if (accTotal <= 0){
+        if (value <= 0){
             const warning = function warning(){
                 document.createElement("p"["Please ensure you have funds above 0"]);
             };
@@ -30,14 +29,44 @@ class Bank {
             document.element.append("accTotal",value);
             };
         };
+    set wdAmount(input){
+        const withdrawal = document.getElementById("wdAmount", input);
+    } 
+    set depAmount(input){
+        const depositedAmount = document.getElementById("depAmount", input);
+    }   
     };
 
     class Withdraw extends Bank {
         constructor(accTotal, depAmount, wdAmount){
             super(accTotal, depAmount, wdAmount);
-            this._withdrawl = withdrawal;
+            this._withdrawal = withdrawl;
         }
-        get withdrawal() {
-            return this._withdrawl;
+        withdraw() {
+            this.accTotal - this.withdrawal;
+            return this.accTotal;
         }
-    }
+    };
+
+    class Deposit extends Bank {
+        constructor(accTotal, depAmount, wdAmount){
+            super(accTotal, depAmount, wdAmount);
+            this._deposit = deposit;
+        }
+        get deposit(){
+            return this._deposit;
+        }
+        deposited() {
+            this.depositedAmount + this.accTotal;
+            return this.accTotal;
+        }
+    };
+
+    function mwdBtnClick() {
+        document.getElementById("wdBtn").click(withdrawal);
+      };
+    
+    
+    function mwdBtnClick() {
+        document.getElementById("depBtn").click(deposited);
+      };

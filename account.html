@@ -34,18 +34,18 @@
     <div class="summary-boxes">
         <p>Deposit Amount</p>
         <p class="acc-total" id="accTotal"></p>
-        <input type="number" class="deposit-input" id="depAmount">
+        <input type="number" class="deposit-input" id="depAmount" onclick="deposited(input)")>
         <button class="dep-btn" id=depBtn>Deposit Amount</button>  
      </div>
 
     <div class="summary-boxes">
        <p>Withdraw Amount</p>
        <p class="acc-total" id="accTotal"></p>
-       <input type="number" class="withdraw-input" id="wdAmount">
+       <input type="number" class="withdraw-input" id="wdAmount" onclick="wdBtn()">
        <button class="wd-btn" id=WdBtn>Withdraw Amount</button> 
     </div>
 </container>    
-<script src="static/javascript/script.js"></script>
+<script src="./static/javascript/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
